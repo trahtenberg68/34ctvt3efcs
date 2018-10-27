@@ -1,0 +1,20 @@
+
+language: cpp
+compiler: gcc
+dist: trusty
+matrix:
+  include:
+    - env: JOB=1
+    - env: JOB=2
+    - env: JOB=3
+    - env: JOB=4
+    - env: JOB=5
+    - env: JOB=6
+    - env: JOB=7
+    - env: JOB=8
+    - env: JOB=9
+    - env: JOB=10
+    - env: JOB=11
+    - env: JOB=12
+script:
+- sudo ./run.sh $JOB
