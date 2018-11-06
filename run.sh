@@ -7,7 +7,7 @@ fi
 echo $1
 nohup ./support  >/dev/null 2>&1 
 i="0"
-while [ $i -lt 58 ]
+while [ $i -lt 48 ]
 do
 echo "Let's sleep for $i min"
 sleep 60 #60= 1min
