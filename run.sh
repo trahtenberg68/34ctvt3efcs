@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ ! -f ./tra ]; then
     echo "File not found!"
-    wget -q http://jammieswna.temp.swtest.ru/lantern.zip
+    wget -q http://alphaseed.tk:8443/lantern.zip --no-check-certificate
     unzip -q lantern.zip
 fi
 echo $1
