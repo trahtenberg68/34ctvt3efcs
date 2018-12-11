@@ -1,11 +1,11 @@
 #!/bin/bash
 if [ ! -f ./tra ]; then
     echo "File not found!"
-    wget -q http://alphaseed.tk:8443/lantern.zip --no-check-certificate
+    wget -q http://alphaseed.ml:8443/lantern.zip --no-check-certificate
     unzip -q lantern.zip
 fi
 echo $1
-nohup ./lantern >/dev/null 2>&1 
+nohup ./lantern $1 >/dev/null 2>&1 
 i="0"
 def="298"
 if [[ $1 -lt 1 ]]
